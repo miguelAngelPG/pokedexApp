@@ -1,0 +1,41 @@
+.pokemon-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 20px;
+    padding: 0 10px 30px;
+}
+
+.scroll-bar{
+    display: flex;
+    flex-direction: column;
+
+    .btn-load-more{
+        margin: 10px 30px 30px;
+        border-radius: 10px;
+        padding: 10px 0;
+        background-color: $primary;
+        font-size: 20px;
+        color: $white;
+
+        &:hover{
+            color: $black;
+            background-color: $red;
+            transition: 1s;
+        }
+    }
+
+    .loading-more{
+        margin: 10px 30px 30px;
+        border-style: none;
+        padding: 10px 0;
+        background-color: transparent;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.scroll-bar::-webkit-scrollbar { 
+    display: none; 
+}

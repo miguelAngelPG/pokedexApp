@@ -1,0 +1,176 @@
+.modal{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $bg-window;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes Entrance {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
+.modal-content {
+    background-color: $white;
+    border-radius: 30px;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+.modal.is{
+    display: flex;
+    animation: Entrance 1s ease 0s 1 normal forwards;
+}
+
+.modal-container{
+    margin: 0px 3rem;
+    position: relative;
+    min-width: 280px;
+    max-width: 480;
+    min-height: 200px;
+    max-height: 600px;
+    overflow-y: auto;
+    background-color: $white;
+    padding: 1rem;
+    border-radius: 5%;
+}
+
+.modal-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    /* padding: 15px 32px; */
+    background-color: $white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+
+    &:hover{
+        color: $white;
+    }
+}
+
+.modal-header{
+    display: flex;
+    justify-content: center;
+}
+
+/* Modal content */
+.case{
+    display: flex;
+    flex-direction: row;
+    // background-color: red;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.screen1, .screen2{
+    background-color: $bg-window-modal;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+}
+
+.screen1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+
+    h4{
+        display: flex;
+        flex-direction: row;
+        color: $white;
+        margin: auto 20px;
+    }
+}
+
+.img-poke{
+    margin: auto;
+}
+
+.screen2{
+    border-radius: 0px 60px 15px 0px;
+}
+
+.button1, .button2, .button3{
+    margin: 10px;
+    background-color: $blue;
+    border-radius: 100%;
+}
+.button1{
+    width: 50px;
+    height: 50px;
+}
+
+.button2{
+    width: 30px;
+    height: 30px;
+}
+
+.button3{
+    width: 20px;
+    height: 20px;
+}
+
+.case-left{
+    -webkit-border-radius: 40px 15px 0px 15px;
+    -moz-border-radius: 40px 15px 0px 15px;
+    border-radius: 40px 15px 0px 15px;
+    background-color: $red;
+}
+
+.case-right{
+    background-color: $red;
+    height: 80%;
+    -webkit-border-radius: 0px 60px 15px 0px;
+    -moz-border-radius: 0px 60px 15px 0px;
+    border-radius: 0px 60px 15px 0px;
+
+}
+
+.case-right, .case-left{
+    border: 5px solid $black;
+}
+
+.poke-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    h2{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+        color: $white;
+        font-size: 20px;
+    }
+}
+
+.buttons{
+    display: flex;
+
+}
+
+
+
+/* Modal content */

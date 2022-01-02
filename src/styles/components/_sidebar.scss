@@ -1,0 +1,136 @@
+.sidebar{
+    align-items: center;
+    background: $primary;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    p{
+        align-items: flex-end;
+        color: $white;
+        display: flex;
+        font-size: 3rem;
+    
+        @media (max-width: $tablet) {
+            margin-right: 30px;
+        }
+
+        @media (max-width: $smartphone) {
+            font-size: 2rem;
+            transition: 10ms;
+        }
+    }
+}
+
+.menu-items{
+    background: none;
+    font-size: 2rem;
+    margin-left: 2rem;
+
+    @media (max-width: $smartphone) {
+        font-size: 1rem;
+        transition: 10ms;
+    }
+}
+
+.menu-search-content{
+    display: flex;
+    padding: 5px;
+    border-radius: 13px;
+    background-color: #0b16537d;
+    margin-right: 2rem;
+    padding-right: 9px;
+    align-items: center;
+
+    @media (max-width: $tablet) {
+        display: none;
+    }
+}
+
+.menu-search{
+    color: $white;
+    background: transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border-style: none;
+    outline: none;
+}
+
+.nav-menu{
+    background-color: $primary;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: -100%;
+    position: fixed;
+    transition: 850ms;
+    top: 0;
+    width: 250px;
+    z-index: 1;
+}
+
+.nav-menu-active{
+    background-color: $primary;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    transition: 350ms;
+    top: 0;
+    width: 250px;
+    z-index: 1;
+}
+
+.nav-item{
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: flex-start;
+    padding: 8px 0 8px 16px;
+
+    a{
+        align-items: center;
+        border-radius: 4px;
+        color: $white;
+        display: flex;
+        font-size: 18px;
+        height: 100%;
+        padding: 0 16px;
+        width: 95%;
+
+        &:hover{
+            background: #145db1;
+        }
+    }
+}
+
+.current{
+    a{
+        background: #250202;
+    }
+}
+
+.nav-menu-list{
+    width: 100%;
+}
+
+.navbar-toggle{
+    align-items: center;
+    background: $primary;
+    display: flex;
+    height: 80px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+span{
+    margin-left: 16px;
+}
+
