@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { GrClose } from 'react-icons/gr'
 import { VscDebugBreakpointLog } from "react-icons/vsc"
-import { BsArrowRightSquareFill } from 'react-icons/bs'
 import { useSelector } from 'react-redux'
 import { upperFirstLetter } from '../hooks/useUpperFirstLetter'
-import { getAbilitiesApi } from '../helpers/loadInfo'
 
 
 export const Modal = ( { isOpen, closeModal, title } ) => {
