@@ -48,7 +48,7 @@ export const ListPokemon = () => {
         }
         
         getPokemones()
-    }, [ page, pokemones ])
+    }, [ page ])
     
     const search = ( id ) => {
         let index = pokemones.filter(pokemon => pokemon.id === id);
