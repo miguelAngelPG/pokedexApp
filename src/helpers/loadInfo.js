@@ -8,7 +8,6 @@ export const getPokemonesApi = async ( page = 1 ) => {
 
         const pokemones = []
         for (let i = ((page*15)-14); i <= page*15; i++) {
-        // for (let i = 1; i <= 15; i++) {
             const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${ i }/`)
             const pokemon  = await data.json()
 
@@ -18,9 +17,7 @@ export const getPokemonesApi = async ( page = 1 ) => {
         return pokemones
 
     } catch (error) {
-        throw "Error2"
-        console.log(error)
-        // throw 'Error al cargar datos' + error
+        console.log(error) 
     }
 
 }
@@ -34,8 +31,6 @@ export const getPokemonApi =  async ( name ) => {
         return pokemon
     } catch (error) {
         return false
-        // throw error
-        console.log(error)
     }
 }
 

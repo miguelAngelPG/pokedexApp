@@ -1,5 +1,4 @@
 import React from 'react'
-import { VscDebugBreakpointLog } from "react-icons/vsc"
 import { upperFirstLetter } from '../hooks/useUpperFirstLetter'
 
 export const PokemonCard = ({ pokemon, bg }) => {
@@ -23,7 +22,6 @@ export const PokemonCard = ({ pokemon, bg }) => {
             <div className='pokemon-info' >
                 <h5>{ buildId( pokemon?.id ) }</h5>
                 <h3>{ upperFirstLetter( pokemon?.name ) } </h3>
-                {/* <h5>{ pokemon?.types.map( (type, index) => <div key={index} ><VscDebugBreakpointLog/>{ upperFirstLetter( type?.type.name ) }</div>) }</h5> */}
             </div>
         </div>
     </div> 
